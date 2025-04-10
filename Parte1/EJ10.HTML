@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJ10</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Este es Don Pollo, del ejercicio 10</h1>
+ <img id="miimagen" src="desesperacion.jpg">
+ <br>
+ <button id="cambiarimagen">Darle pollo</button>
+ <script>
+document.getElementById("cambiarimagen").onclick = function(){
+    document.getElementById("miimagen").src = "NOPORFAVOR.jpg";
+    //cambiara la imagen al la otra con click
+    document.getElementsByTagName("h1")[0].innerHTML = "NO POR FAVOR";
+    //cambiara el texto del h1 al clickear el boton (SOLO EL PRIMERO AL SER 0)
+    document.getElementById("cambiarimagen").innerHTML ="QUE HAS HECHO ANIMAL";
+};  
+ </script>
+</body>
+</html>

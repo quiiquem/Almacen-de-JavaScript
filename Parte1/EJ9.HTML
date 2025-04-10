@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Párrafo</title>
+</head>
+<body>
+    <p id="eliminar">Este es el texto que se borra, con id</p>
+    <button onclick="borrarTexto()">Eliminar Texto</button> 
+    <script>
+        function borrarTexto(){
+            const Parrafo = getElementById('eliminar'); // Elimina el párrafo con id "eliminar"
+            if (Parrafo) {
+                Parrafo.remove(); // Elimina el párrafo 
+            } else {
+                console.log("El párrafo no existe."); //El párrafo ni existe
+            }
+        }
+    </script>
+</body>
+</html>

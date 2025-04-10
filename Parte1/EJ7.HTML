@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJ7</title>
+    <style>
+        body{
+            transition: background-color  2s ease-in-out, font-size 1s linear;
+        }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <button id="cambiar">Mira lo que pasa al darme click</button>
+    <br>
+    <p id="pe">Hola :)</p>
+    <script>document.getElementById("cambiar").onclick = function(){
+    document.body.style.backgroundColor= 'red'; 
+    document.getElementById("cambiar").innerHTML = "NO LO DIGA";
+    document.getElementById("pe").innerHTML= "Mods, banear al que ha dado click con martillos";
+    document.body.style.fontSize = '32px';
+    document.body.style.color = 'white';
+    };
+    </script>
+   
+</body>
+</html>

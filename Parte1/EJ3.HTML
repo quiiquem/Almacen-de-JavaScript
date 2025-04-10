@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJ3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="miId">Contenido con ID</div>
+    <p class="clase">Clase</p>
+    <span class="clase">Otro contenido que se llama igual</span>
+    <div>Esto es un div normal sin id</div>
+</body>
+<script>
+    let elementoID = document.getElementById('miId');
+    console.log('Contenido por ID: ',elementoID.textContent);
+
+    let elementoclase = document.getElementsByClassName('clase');
+    for(let i = 0; i < elementoclase.length; i++){
+        console.log('Contenido por clase:', elementosPorClase[i].textContent);
+    }
+
+    let elementoetiqueta = document.getElementsByTagName('div');
+    for(let i = 0; i < elementoetiqueta.length; i++){
+        console.log('Contenido por etiqueta: ', elementoetiqueta[i].textContent);
+    }
+</script>
+</html>

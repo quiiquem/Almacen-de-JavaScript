@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJ5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    .destacado {
+        background-color: rgb(200, 247, 172);
+        border: 2px solid rgb(105, 225, 255);
+        font-size: 3rem;
+        padding: 10px;
+    }
+</style>
+<body>
+<button id="Boton">Dale al botón!</button>
+<div id="miDiv">Este es un div</div>
+
+<script>
+    document.getElementById("Boton").addEventListener("click", function() {
+        document.getElementById("miDiv").classList.toggle("destacado");
+        document.getElementById("miDiv").innerHTML="DESTACANDO";
+    });
+</script>
+</body>
+</html>

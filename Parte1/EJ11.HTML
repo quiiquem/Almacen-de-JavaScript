@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJ11</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .item-destacado {
+            color: rgb(255, 0, 0);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul id="ListaItems">
+        <li>Counter-Strike 2</li>
+        <li>Dota 2</li>
+        <li>Rust</li>
+        <li>Apex Legends</li>
+        <li>Grand Theft Auto V</li>
+        <li>ARK: Survival Evolved</li>
+        <li>Cyberpunk 2077</li>
+        <li>The Witcher 3: Wild Hunt</li>
+        <li>Red Dead Redemption 2</li>
+        <li>Elden Ring</li>
+    </ul>
+
+    <script>
+        const lista = document.getElementById("ListaItems");
+        lista.addEventListener("click", function () {
+            const items = lista.getElementsByTagName("li");
+
+            for (let i = 0; i < items.length; i++) {
+                if (items[i].textContent.length > 10) {
+                    items[i].classList.add("item-destacado");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
