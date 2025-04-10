@@ -1,0 +1,24 @@
+<!--12.Utiliza la propiedad innerHTML para insertar una estructura HTML (un párrafo y
+una lista) dentro de un div con id contenido.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <script>
+        //Crear el div
+        let divcontenido = document.body.innerHTML = "<div id='contenido'></div>"; 
+        let contenido = document.getElementById("contenido");
+        //Crear el parrafo y la lista
+        let parrafo = "<p>Hola, soy un parrafo</p>";
+        let lista = "<ul><li>Elemento 1</li><li>Elemento 2</li><li>Elemento 3</li></ul>";
+        //Insertar el parrafo y la lista en el div
+        contenido.innerHTML = parrafo + lista;
+  </script>
+</body>
+</html>
